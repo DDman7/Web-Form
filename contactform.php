@@ -1,9 +1,9 @@
 <?php
-  if (isset($_POST["submit"])) {
-    $name = $_POST["full_name"];
-    $email_from = $_POST["email"];
-    $subject = $_POST["subject"];
-    $message = $_POST["message"];
+  if (isset($_GET["submit"])) {
+    $name = $_GET["full_name"];
+    $email_from = $_GET["email"];
+    $subject = $_GET["subject"];
+    $message = $_GET["message"];
 
     $mail_to = "daviddanyal99@protonmail.com";
     $txt = "Email via contact form from ".$name."."."\n\n".$message;
